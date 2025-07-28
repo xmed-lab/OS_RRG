@@ -1,6 +1,6 @@
 <div align='center'>
 
-<h2><a href="https://github.com/xmed-lab/OS_RRG">OS-RRG: Observation State-Aware Radiology Report Generation With Balanced Diagnosis and Attention Intervention</a></h2>
+<h2><a href="https://ieeexplore.ieee.org/document/11095809">OS-RRG: Observation State-Aware Radiology Report Generation With Balanced Diagnosis and Attention Intervention</a></h2>
 
 </div>
 
@@ -24,11 +24,11 @@ pip install -r requirements.txt
 
 ### Data Acquisition
 
-**MIMIC-CXR**: The images can be downloaded from either [physionet](https://www.physionet.org/content/mimic-cxr-jpg/2.0.0/) or [R2Gen](https://github.com/zhjohnchan/R2Gen). Note that the physionet version requires a license for download. We use the [R2Gen](https://github.com/zhjohnchan/R2Gen) version for both training and evaluation. The annotation file can be downloaded from [Google Drive](https://drive.google.com). Please place all downloaded files under the `data/mimic_cxr/` folder.
+**MIMIC-CXR**: The images can be downloaded from either [physionet](https://www.physionet.org/content/mimic-cxr-jpg/2.0.0/) or [R2Gen](https://github.com/zhjohnchan/R2Gen). Note that the physionet version requires a license for download. We use the [R2Gen](https://github.com/zhjohnchan/R2Gen) version for both training and evaluation. The annotation file can be downloaded from [Google Drive](https://drive.google.com/file/d/1eMfcvq8ivcIgo1U25TW_b7aUeK3EByji/view?usp=drive_link). Please place all downloaded files under the `data/mimic_cxr/` folder.
 
-**IU-Xray**: Download the images from [R2Gen](https://github.com/zhjohnchan/R2Gen) and the annotation file from [Google Drive](https://drive.google.com/file/d/your_iu_xray_annotation_link). Please place both the images and annotation files under the `data/iu_xray/` folder.
+**IU-Xray**: Download the images from [R2Gen](https://github.com/zhjohnchan/R2Gen) and the annotation file from [Google Drive](https://drive.google.com/file/d/17i2stPYwhn-9PD-wz7L5Sy6CcReLAOmn/view?usp=drive_link). Please place both the images and annotation files under the `data/iu_xray/` folder.
 
-Moreover, you need to download the `chexbert.pth` from [here](https://drive.google.com) for evaluating clinical efficacy and put it under `checkpoints/chexbert/`.
+Moreover, you need to download the `chexbert.pth` from [here](https://drive.google.com/file/d/1PaNNmQvAmtrywQkt71J3eJ53K1U9qtPQ/view?usp=drive_link) for evaluating clinical efficacy and put it under `checkpoints/chexbert/`.
 
 ## 🚀 Training
 
@@ -56,8 +56,8 @@ bash train_step2_SBD.sh
 
 You can directly use our pre-trained models for evaluation:
 
-* **Step 1 - State-to-Description Alignment**: [Weights](https://drive.google.com/drive/folders/your_alignment_weights_folder) - Put at ./checkpoints/osrrg/
-* **Step 2 - Imbalanced Observation and State Mitigation (SBD)**: [Weights](https://drive.google.com/drive/folders/your_sbd_weights_folder) - Put at ./checkpoints/osrrg/
+* **Step 1 - State-to-Description Alignment**: [Weights](https://drive.google.com/file/d/1hyt91Or3zZMY4MpBGJC9y2Oe-qn1Kwsu/view?usp=drive_link) - Put at ./checkpoints/osrrg/
+* **Step 2 - Imbalanced Observation and State Mitigation (SBD)**: [Weights](https://drive.google.com/file/d/1UNeo1dQ3qF7RFLq0iDbEEhZoF4LlLF2O/view?usp=drive_link) - Put at ./checkpoints/osrrg/
 
 ### Testing Commands
 
