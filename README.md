@@ -56,8 +56,8 @@ bash train_step2_SBD.sh
 
 You can directly use our pre-trained models for evaluation:
 
-* **Step 1 - State-to-Description Alignment**: [Download Alignment Weights](https://drive.google.com/drive/folders/your_alignment_weights_folder) - Put at ./checkpoints/osrrg/
-* **Step 2 - Imbalanced Observation and State Mitigation (SBD)**: [Download SBD Weights](https://drive.google.com/drive/folders/your_sbd_weights_folder) - Put at ./checkpoints/osrrg/
+* **Step 1 - State-to-Description Alignment(https://drive.google.com/drive/folders/your_alignment_weights_folder)** - Put at ./checkpoints/osrrg/
+* **Step 2 - Imbalanced Observation and State Mitigation (SBD)(https://drive.google.com/drive/folders/your_sbd_weights_folder)** - Put at ./checkpoints/osrrg/
 
 ### Testing Commands
 
