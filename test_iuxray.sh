@@ -1,0 +1,14 @@
+CUDA_VISIBLE_DEVICES=0 python main_test.py \
+    --n_gpu 1 \
+    --image_dir your_image_dir \
+    --ann_path ./data/iu_xray/iuxray_annotation.json \
+    --dataset_name iu_xray \
+    --gen_max_len 110 \
+    --gen_min_len 60 \
+    --batch_size 32 \
+    --save_dir ./results/iu_xray/infer \
+    --seed 456789 \
+    --beam_size 3 \
+    --image_size 224 \
+    --load_pretrained ./checkpoints/osrrg/osrrg_alignment.pth \
+    --load_sbd_pretrained ./checkpoints/osrrg/osrrg_sbd.pth
